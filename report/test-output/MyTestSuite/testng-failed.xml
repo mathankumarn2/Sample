@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MyTestSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.example.testngreport.LiveReportListener"/>
+    <listener class-name="com.example.testngreport.LiveExecutionReporter"/>
+  </listeners>
+  <test thread-count="5" name="MyTest(failed)">
+    <classes>
+      <class name="com.example.report.TestSuite1.websiteLaunch">
+        <methods>
+          <include name="setUp"/>
+          <include name="launchWebsite"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.example.report.TestSuite1.websiteLaunch -->
+    </classes>
+  </test> <!-- MyTest(failed) -->
+</suite> <!-- Failed suite [MyTestSuite] -->

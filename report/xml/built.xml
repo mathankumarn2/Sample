@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="MyTestSuite" verbose="1">
+    <listeners>
+        <listener class-name="com.example.testngreport.LiveReportListener" />
+       <!--  <listener class-name="com.example.testngreport.LiveExecutionReporter" />
+        <listener class-name="com.example.testngreport.ExtentReports.java" />  -->
+    </listeners>
+    <!-- Test tags go here -->
+     <test name="MyTest">
+        <classes>
+            <class name="com.example.report.TestSuite1.sampleTestCase" />
+        </classes>
+    </test>
+</suite>
